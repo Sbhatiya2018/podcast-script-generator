@@ -17,7 +17,7 @@ function App() {
     setScript('');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/generate', {
+      const response = await axios.post('/api/generate', {
         topic: topic
       });
       setScript(response.data.script);
